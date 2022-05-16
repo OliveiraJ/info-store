@@ -1,7 +1,7 @@
 export const PRODUCTS = [
     {
         "id":1,
-        "name":"Lorem Ipsum",
+        "name":"Ipsum Lorem",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500",
         "price":5999.,
         "srcimage":"images/placeholder.png"
