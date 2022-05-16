@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-// import { PRODUCTS } from "../assets/products";
 
 interface ProductData {
     id: number
@@ -93,14 +92,14 @@ const BuyButonContainer = styled.div`
 `
 
 const BuyButton = styled.button`
-height: 50px;
-width: 200px;
-color: white;
-background-color: #e10141;
-border-radius: 10px;
-border: none;
-font-size: x-large;
-font-weight: 700;
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: #e10141;
+    border-radius: 10px;
+    border: none;
+    font-size: x-large;
+    font-weight: 700;
 cursor: pointer;
 `
 
@@ -134,12 +133,6 @@ const InputFreight = styled.input`
 export function Product() {
     const location = useLocation()
     const product: ProductData = location.state as ProductData
-    // const productId = location.state as number
-
-    // function checkID(product:ProductData) {
-    //         return product.id === productId
-    // }
-    // const product: ProductData = PRODUCTS.find(product => product.id === productId) as ProductData
     return (
         <PageProductsContainer>
             <ImageContainer>
