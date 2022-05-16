@@ -36,6 +36,7 @@ const TopBarContainer = styled.header`
 
 const MainContainer = styled.main`
     grid-area: main;
+    gap: 1em 1em
 
 `
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from "styled-components"
 import { GlobalStyle } from './theme/globalStyle';
-import { MainContainer, TopBarContainer, FooterContainer, GridLayout } from './components/containers/containers';
-import { Main } from './components/main/main';
-import { TopBar } from './components/top-bar/top-bar';
-import { Footer } from './components/footer/footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/home';
+import { Layout } from './pages/layout';
+import { Bag } from './pages/bag';
+import { NoPage } from './pages/noPage';
+import { Product } from './pages/product';
 import { defaultTheme } from './theme/theme';
 
 function App() {
@@ -13,18 +15,17 @@ function App() {
       <GlobalStyle />
 
       <ThemeProvider theme={defaultTheme}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path='bag' element={<Bag />} />
+              <Route path='/product' element={<Product />} />
+              <Route path='*' element={<NoPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
 
-        <GridLayout>
-          <TopBarContainer>
-            <TopBar />
-          </TopBarContainer>
-          <MainContainer >
-            <Main />
-          </MainContainer>
-          <FooterContainer>
-            <Footer />
-          </FooterContainer>
-        </GridLayout>
 
       </ThemeProvider>
     </>

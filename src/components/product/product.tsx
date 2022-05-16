@@ -15,11 +15,13 @@ const ProductList = styled.section`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1.5em 1.5em;
     justify-content: center;
 `
 const ProductImage = styled.img`
     width: 200px;
     height: 200px;
+    border-radius: 8px;
 `
 const DataContainer = styled.div`
     padding: 5px;
@@ -27,7 +29,7 @@ const DataContainer = styled.div`
 const ProductContainer = styled.div`
     width: 222px;
     height: 300px;
-    margin: 0 1em 1em;
+    /* margin: 0 1em 1em; */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 4px gray;

@@ -4,16 +4,17 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { Handbag, Heart, Person, Shop } from "@styled-icons/bootstrap"
 
-const Title = styled.h1`
+const Title = styled.p`
     font-weight: 800;
     color: #e10141;
+    font-size: xx-large;
 `
 
 function TopBar() {
     return (
         <>
             <Nav>
-                <Link to="/home">
+                <Link to="/">
                     <Title>
                         INFO-Store
                     </Title>
@@ -24,7 +25,7 @@ function TopBar() {
 
             <NavBarContainer>
                 <Nav>
-                    <Link to="#section">
+                    <Link to="/">
                         <Shop size="30" title="Produtos" />
                     </Link>
                 </Nav>

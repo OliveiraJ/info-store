@@ -22,7 +22,7 @@ const SocialLink = styled(Link)`
 function Footer() {
     return (
         <>
-            <p>&copy; All Rights reserved for INFO-Store</p>
+            <p>&copy; 2022 Todos os direitos reservados para INFO-Store</p>
             <SocialMediaSection>
                 <p>Fale conosco:</p>
                 <ul>

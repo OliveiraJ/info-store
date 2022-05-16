@@ -13,7 +13,7 @@ function Main() {
             <Outlet />
             <ProductList>
                 {PRODUCTS && PRODUCTS.map(product =>
-                    <ProductLink key={product.id} to="/" >
+                    <ProductLink key={product.id} to="/product" state={product} >
                         <Product key={product.id} id={product.id} description={product.description} price={product.price} image={product.srcimage} name={product.name} />
                     </ProductLink>
                 )}
